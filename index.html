@@ -553,6 +553,115 @@
             margin: 0;
         }
 
+        .competency-example {
+            background: linear-gradient(135deg, #ebf8ff 0%, #bee3f8 100%);
+            border-left: 4px solid #3182ce;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .competency-example h4 {
+            color: #2c5282;
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        .competency-example p {
+            color: #2d3748;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .example-demonstrates {
+            font-size: 0.95em;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #90cdf4;
+        }
+
+        .example-demonstrates strong {
+            color: #2c5282;
+        }
+
+        .implementation-practical {
+            background: #f0fff4;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #48bb78;
+        }
+
+        .implementation-practical h4 {
+            color: #22543d;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
+        .implementation-practical p {
+            color: #2f855a;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .implementation-practical ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        .implementation-practical li {
+            color: #276749;
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .equity-section {
+            background: linear-gradient(135deg, #fef5e7 0%, #fdebd0 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #dd6b20;
+        }
+
+        .equity-section h4 {
+            color: #7c2d12;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
+        .equity-section p {
+            color: #744210;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .equity-section ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        .equity-section li {
+            color: #7c2d12;
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .equity-commitment {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #dd6b20;
+            font-style: italic;
+            color: #7c2d12;
+            line-height: 1.8;
+        }
+
+        .equity-commitment strong {
+            color: #9c4221;
+            font-style: normal;
+        }
+
         .footer {
             text-align: center;
             margin-top: 60px;
@@ -759,6 +868,12 @@
                     </div>
                 </div>
             </div>
+
+            <div class="competency-example">
+                <h4>💡 Example: Intermediate Data Storytelling in Practice</h4>
+                <p>A student analyzes customer churn data for a retail company. They create a presentation that opens with the business context (quarterly churn has increased to 22%, costing $2M in lost revenue), uses a dashboard visualization showing churn rates by customer segment and purchase frequency, and presents three specific retention strategies with projected ROI. When the VP of Marketing asks about seasonal patterns, the student adjusts their explanation from technical language about time-series decomposition to a business-friendly discussion of "holiday shopping behavior trends." The recommendations include specific implementation steps and success metrics.</p>
+                <p class="example-demonstrates"><strong>This demonstrates:</strong> Complete narrative arc, audience adaptation, business-connected recommendations, effective visualization design, and ability to respond to stakeholder questions (Intermediate behaviors #1, #2, #3, #4, #5).</p>
+            </div>
         </div>
 
         <!-- Competency 2 -->
@@ -831,6 +946,12 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div class="competency-example">
+                <h4>💡 Example: Intermediate AI-Augmented Analytics in Practice</h4>
+                <p>A student uses Claude to help analyze employee sentiment from open-ended survey responses. Rather than accepting the AI's initial summary, they design a multi-step prompt sequence: first extracting themes, then validating those themes against HR literature, then quantifying sentiment by department. They notice the AI misclassifies sarcastic comments as positive, so they refine their prompt to flag ambiguous responses for manual review. They compare AI-identified themes with their own close reading of 50 responses, finding 85% agreement. In their final report, they transparently document their AI workflow, explain why they used AI for initial theme extraction but validated manually, and note the limitations of sentiment analysis on culturally diverse workforce comments.</p>
+                <p class="example-demonstrates"><strong>This demonstrates:</strong> Sophisticated prompt engineering, systematic validation approach, identification of AI errors, appropriate tool selection, and transparent documentation (Intermediate behaviors #1, #3, #4, #5, #7).</p>
             </div>
         </div>
 
@@ -905,6 +1026,12 @@
                     </div>
                 </div>
             </div>
+
+            <div class="competency-example">
+                <h4>💡 Example: Intermediate Analytical Reasoning in Practice</h4>
+                <p>A student analyzes sales data showing a 30% increase in online orders after a website redesign. Rather than concluding the redesign caused the increase, they investigate further: checking whether a concurrent marketing campaign might confound results, examining whether the increase was consistent across product categories (it wasn't—only electronics increased), and reviewing whether seasonal patterns could explain the change (the increase started before typical holiday shopping). They discover the data excludes returned items, which spiked 40% for electronics during this period. Their report concludes: "While online orders increased, the redesign's impact is unclear due to confounding factors. The electronics-specific increase and high return rate suggest potential usability issues worth investigating before declaring success."</p>
+                <p class="example-demonstrates"><strong>This demonstrates:</strong> Questioning initial conclusions, identifying confounding variables, recognizing data limitations, evaluating multiple explanations, and acknowledging uncertainty (Intermediate behaviors #2, #4, #5, #6).</p>
+            </div>
         </div>
 
         <!-- Competency 4 -->
@@ -977,6 +1104,12 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div class="competency-example">
+                <h4>💡 Example: Intermediate Collaborative Analytics in Practice</h4>
+                <p>In a team project analyzing hospital readmission rates, a student notices their teammate struggling with SQL queries. Rather than just completing their own assigned analysis, they schedule a 30-minute session to walk through query logic, shares a template they created, and suggests documentation resources. During team meetings, they actively solicit input from quieter members ("Dev, you worked in healthcare—what's your take on these patterns?"). When the team's visualizations and written analysis feel disjointed, they volunteer to create a shared outline that integrates everyone's work, then circulate it for feedback before finalizing. When a team member misses a deadline due to a family emergency, they proactively redistribute tasks and update the project timeline, then check in privately to offer support.</p>
+                <p class="example-demonstrates"><strong>This demonstrates:</strong> Proactive knowledge sharing, facilitation of inclusive discussions, integration of deliverables, flexible role adaptation, and supportive team culture (Intermediate behaviors #1, #2, #3, #4, #6).</p>
             </div>
         </div>
 
@@ -1073,6 +1206,69 @@
                 <li><strong>What happens when students struggle?</strong> Define intervention strategies and support pathways for students below expectations</li>
             </ul>
 
+            <h3>Practical Implementation: Making This Work</h3>
+            
+            <div class="implementation-practical">
+                <h4>Using This Framework Realistically</h4>
+                <p>This framework is comprehensive by design, but practical implementation requires selectivity and strategy:</p>
+                <ul>
+                    <li><strong>Not every assignment assesses all 4 competencies</strong>—select 1-2 per assignment that align with learning objectives</li>
+                    <li><strong>Not every behavior needs assessment</strong>—focus on 3-4 priority behaviors per assignment rather than all 6-7</li>
+                    <li><strong>Use formative assessment liberally</strong>—provide developmental comments more often than formal rubric scoring</li>
+                    <li><strong>Leverage technology</strong>—use rubric features in Canvas/Blackboard to reduce manual tracking and provide consistency</li>
+                    <li><strong>Start small and scale</strong>—pilot with one competency in one course before expanding to full program implementation</li>
+                </ul>
+
+                <h4>Reducing Faculty Burden</h4>
+                <ul>
+                    <li><strong>Create quick-reference guides:</strong> One-page summaries of just the behaviors list for each competency</li>
+                    <li><strong>Build assignment-specific rubrics:</strong> Pull only relevant behaviors for each task rather than using the full framework</li>
+                    <li><strong>Share the assessment load:</strong> Different faculty can focus on different competencies within courses</li>
+                    <li><strong>Use peer assessment strategically:</strong> Students can provide formative feedback on selected behaviors, reserving faculty assessment for summative evaluation</li>
+                    <li><strong>Batch similar assignments:</strong> Assess the same competency across multiple students simultaneously for calibration and efficiency</li>
+                </ul>
+
+                <h4>Building Over Time</h4>
+                <ul>
+                    <li><strong>Year 1:</strong> Focus on establishing reliable Fundamental assessment and faculty norming</li>
+                    <li><strong>Year 2:</strong> Add Intermediate tracking and begin building exemplar library from student work</li>
+                    <li><strong>Year 3+:</strong> Implement full developmental tracking with portfolio assessment and program-level analytics</li>
+                </ul>
+            </div>
+
+            <h3>Equity and Inclusive Practice</h3>
+            
+            <div class="equity-section">
+                <p>This framework recognizes that students enter the MSBA program with varied educational backgrounds, work experiences, cultural contexts, and learning needs. To implement this framework equitably:</p>
+                
+                <h4>Recognizing Diverse Strengths</h4>
+                <ul>
+                    <li><strong>Communication styles vary culturally:</strong> Effective data storytelling may look different across contexts. Focus on clarity, impact, and audience connection rather than conformity to a single presentation style. What counts as "professional communication" in one culture may differ in another.</li>
+                    <li><strong>Prior experience shapes starting points:</strong> Students from industry bring different strengths than those coming straight from undergraduate programs. Students with technical backgrounds may start stronger in analytical reasoning but need more support in storytelling. Recognize and leverage these diverse entry points.</li>
+                    <li><strong>Multiple valid paths to competency:</strong> Some students excel in written analysis, others in verbal presentation, others in visual communication. Provide multiple ways to demonstrate competency where possible.</li>
+                </ul>
+
+                <h4>Practical Equity Strategies</h4>
+                <ul>
+                    <li><strong>Provide explicit instruction on norms:</strong> Don't assume students know "professional business communication" norms—teach them explicitly with examples. This particularly supports first-generation students and international students.</li>
+                    <li><strong>Use diverse examples and scenarios:</strong> Ensure case studies, datasets, and scenarios reflect varied industries, geographic contexts, and organizational types.</li>
+                    <li><strong>Scaffold collaborative work:</strong> Teamwork competencies may be new to students from educational systems emphasizing individual work. Provide explicit frameworks and support for effective collaboration.</li>
+                    <li><strong>Be mindful of language barriers:</strong> For multilingual students, distinguish between language proficiency and analytical capability. Consider extended time or alternative formats when appropriate.</li>
+                    <li><strong>Address technology access:</strong> Ensure AI tools and software used in competency development are accessible to all students, not just those with personal resources.</li>
+                </ul>
+
+                <h4>Accessibility and Accommodations</h4>
+                <ul>
+                    <li><strong>Work with disability services:</strong> Adapt assessment methods while maintaining competency standards for students with documented disabilities</li>
+                    <li><strong>Consider universal design:</strong> Build flexibility into assessments (e.g., written report OR recorded presentation) that benefits all students</li>
+                    <li><strong>Provide alternative formats:</strong> When presentations are required, consider allowing pre-recorded videos for students with anxiety or speech differences</li>
+                </ul>
+
+                <div class="equity-commitment">
+                    <strong>Ongoing Commitment:</strong> Equitable implementation requires regular reflection on whose voices, experiences, and ways of demonstrating competency are privileged by our assessments. Faculty should periodically review assessment data disaggregated by student demographics to identify unintended bias patterns and adjust accordingly.
+                </div>
+            </div>
+
             <h3>For Students: Understanding Your Development</h3>
             
             <h4>Navigating the Competency Continuum</h4>
@@ -1110,7 +1306,7 @@
 
             <div class="student-example">
                 <h4>Example: Student Self-Assessment</h4>
-                <p><em>"At the start of the semester, I was consistently at the Fundamental level for Data Storytelling—I could organize findings but struggled to adapt to audiences. Now, I'm showing Intermediate capabilities more often: my last three presentations successfully translated technical findings for business stakeholders (Intermediate behavior #4), and I'm starting to anticipate questions in my narrative (Intermediate behavior #5). I still need work on designing sophisticated visualizations (Intermediate behavior #2). My goal this month is to practice visualization design on every assignment and seek feedback specifically on that skill."</em></p>
+                <p><em>"At the start of the semester, I was consistently at Fundamental level for Data Storytelling—I could organize findings but struggled to adapt to audiences. Now, I'm showing Intermediate capabilities more often: my last three presentations successfully translated technical findings for business stakeholders (Intermediate behavior #4), and I'm starting to anticipate questions in my narrative (Intermediate behavior #5). I still need work on designing sophisticated visualizations (Intermediate behavior #2). My goal this month is to practice visualization design on every assignment and seek feedback specifically on that skill."</em></p>
             </div>
         </div>
 
