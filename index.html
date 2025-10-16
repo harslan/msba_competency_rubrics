@@ -760,6 +760,13 @@
             font-size: 1.1em;
         }
 
+        .assessment-level h6 {
+            color: #2d3748;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
         .assessment-level p {
             color: #2d3748;
             line-height: 1.7;
@@ -805,6 +812,13 @@
             font-size: 1.05em;
         }
 
+        .threshold-level h6 {
+            color: #2d3748;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
         .threshold-level ul {
             list-style-type: none;
             padding-left: 0;
@@ -814,6 +828,12 @@
             color: #276749;
             padding: 8px 0;
             line-height: 1.6;
+        }
+
+        .threshold-level p {
+            color: #2d3748;
+            line-height: 1.7;
+            margin: 8px 0;
         }
 
         .assessment-note {
@@ -898,6 +918,12 @@
             line-height: 1.6;
         }
 
+        .badge-example-detailed p {
+            color: #2d3748;
+            line-height: 1.7;
+            margin: 8px 0;
+        }
+
         .assessment-option {
             background: white;
             padding: 20px;
@@ -966,12 +992,39 @@
             margin-bottom: 12px;
         }
 
+        .badge-closing ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        .badge-closing li {
+            color: #742a2a;
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
         .badge-note {
             background: white;
             padding: 15px;
             border-radius: 6px;
             margin-top: 15px;
             border-left: 3px solid #fc8181;
+        }
+
+        .badge-note p {
+            color: #742a2a;
+            margin: 0 0 10px 0;
+        }
+
+        .badge-note ul {
+            margin-left: 25px;
+            margin-top: 8px;
+        }
+
+        .badge-note li {
+            color: #742a2a;
+            margin-bottom: 6px;
+            line-height: 1.6;
         }
 
         .footer {
@@ -1621,313 +1674,306 @@
                 <p><em>"At the start of the semester, I was consistently at Fundamental level for Data Storytelling—I could organize findings but struggled to adapt to audiences. Now, I'm showing Intermediate capabilities more often: my last three presentations successfully translated technical findings for business stakeholders (Intermediate behavior #4), and I'm starting to anticipate questions in my narrative (Intermediate behavior #5). I still need work on designing sophisticated visualizations (Intermediate behavior #2). My goal this month is to practice visualization design on every assignment and seek feedback specifically on that skill."</em></p>
             </div>
 
-            <h3>Competency Badge Recognition System</h3>
+            <h3>Competency Badge Recognition System (Simplified Implementation)</h3>
             
             <div class="badge-system-intro">
-                <p><strong>Overview:</strong> Many programs implement a competency badge system that recognizes student achievement through performance-based assessments. Unlike traditional grades, competency badges certify that students have demonstrated specific capabilities through authentic work. This section provides guidance for programs choosing to implement badge recognition.</p>
+                <p><strong>Overview:</strong> Many programs implement a streamlined competency badge system that recognizes student achievement through performance-based assessments linked to specific coursework. This simplified approach balances pedagogical rigor with practical implementation.</p>
                 
-                <h4>Philosophy of Competency Badges</h4>
-                <p>Badges represent <strong>demonstrated competency through performance</strong>, not accumulated points or course grades. Each badge certifies that a student has successfully completed assessments designed to elicit specific competency behaviors and has met defined threshold criteria. This approach:</p>
+                <h4>Core Principle: Grade Threshold + Faculty Confirmation</h4>
+                <p>Badges are awarded when students meet <strong>two criteria</strong>:</p>
                 <ul>
-                    <li>Provides <strong>portable credentials</strong> that communicate specific capabilities to employers</li>
-                    <li>Allows <strong>multiple pathways</strong> to demonstration—students can show competency through various authentic assessments</li>
-                    <li>Supports <strong>mastery learning</strong>—students can revise and resubmit to meet thresholds</li>
-                    <li>Creates <strong>transparent expectations</strong>—students know exactly what they need to demonstrate</li>
-                    <li>Generates <strong>credible evidence</strong> for accreditation and program assessment</li>
+                    <li><strong>Grade Threshold:</strong> Earn minimum grade on designated assignment (B+ for Foundation, A- for Intermediate, A for Advanced)</li>
+                    <li><strong>Faculty Confirmation:</strong> Instructor confirms student demonstrated competency behaviors at the target level (simple yes/no)</li>
+                </ul>
+                
+                <h4>Why This Approach Works</h4>
+                <p>This simplified system is:</p>
+                <ul>
+                    <li><strong>Simple for Faculty:</strong> One assignment per badge, grade provides objective threshold, 30-second confirmation per student</li>
+                    <li><strong>Clear for Students:</strong> Transparent expectations tied to existing coursework, no complex pathway choices</li>
+                    <li><strong>Efficient for Administration:</strong> Minimal tracking, automated grade data from LMS, easy to explain to stakeholders</li>
+                    <li><strong>Pedagogically Sound:</strong> Performance-based (not just points), faculty judgment prevents gaming, tied to authentic assessments</li>
+                    <li><strong>Accreditation-Ready:</strong> Demonstrates competency-based assessment with credible evidence</li>
                 </ul>
             </div>
 
-            <h4>Recommended Badge Structure</h4>
+            <h4>Badge Structure</h4>
             
             <div class="badge-tiers">
                 <div class="badge-tier">
                     <h5>Tier 1: Competency-Specific Badges (12 total)</h5>
-                    <p>Individual badges for each competency at each level, recognizing focused achievement:</p>
+                    <p>Individual badges for each competency at each level:</p>
                     <ul>
                         <li><strong>Foundation Badge</strong> in [Competency Name]</li>
                         <li><strong>Intermediate Badge</strong> in [Competency Name]</li>
                         <li><strong>Advanced Badge</strong> in [Competency Name]</li>
                     </ul>
-                    <p class="tier-note"><em>Example: "Foundation Badge in Data Storytelling," "Intermediate Badge in AI-Augmented Analytics"</em></p>
-                    <p><strong>Why this structure:</strong> Honors uneven development—students can be Advanced in analytical reasoning while still building AI skills. Allows specialization aligned with career goals.</p>
+                    <p class="tier-note"><em>Example: "Intermediate Badge in Data Storytelling," "Advanced Badge in Analytical Reasoning"</em></p>
+                    <p><strong>Why this structure:</strong> Honors uneven development—students can excel in some competencies while still building others. Allows specialization aligned with career goals and interests.</p>
                 </div>
 
                 <div class="badge-tier">
-                    <h5>Tier 2: Comprehensive Program Badges (3 total)</h5>
-                    <p>Recognizes well-rounded competency development across all four areas:</p>
+                    <h5>Tier 2: Comprehensive Scholar Badges (3 total - Optional)</h5>
+                    <p>Recognizes well-rounded achievement across all four competencies:</p>
                     <ul>
                         <li><strong>MSBA Foundation Scholar:</strong> Foundation badges in all 4 competencies</li>
                         <li><strong>MSBA Intermediate Scholar:</strong> Intermediate badges in all 4 competencies</li>
                         <li><strong>MSBA Advanced Scholar:</strong> Advanced badges in 2+ competencies + Intermediate in all others</li>
                     </ul>
-                    <p><strong>Why this structure:</strong> Provides program-level milestones, marketing value, and comprehensive capability certification while maintaining flexibility.</p>
+                    <p><strong>Why this structure:</strong> Provides program-level milestones for marketing, graduation recognition, and comprehensive capability certification.</p>
                 </div>
             </div>
 
-            <h4>Designing Competency Assessments for Badges</h4>
+            <h4>Implementation: How It Works</h4>
             
-            <div class="assessment-design">
-                <p><strong>Key Principle:</strong> Each badge requires students to demonstrate specific competency behaviors through authentic, performance-based assessments.</p>
+            <div class="badge-example-detailed">
+                <h5>Step 1: Map Badges to Existing Assignments</h5>
+                <p>Designate one signature assignment per badge in specific courses. Example program map:</p>
                 
-                <div class="assessment-level">
-                    <h5>Foundation Level Assessments</h5>
-                    <p><strong>Characteristics:</strong> Structured, scaffolded projects that establish baseline capabilities</p>
-                    <p><strong>Assessment Types:</strong></p>
+                <div class="assessment-option">
+                    <h6>Foundation Badges (typically awarded in ISOM 700 series)</h6>
                     <ul>
-                        <li>Individual analysis of provided datasets with clear instructions</li>
-                        <li>Guided case studies with structured deliverables</li>
-                        <li>Basic simulations with coaching available</li>
-                        <li>Reflective assignments demonstrating understanding of concepts</li>
-                    </ul>
-                    <p><strong>Example - Foundation Badge in Data Storytelling:</strong></p>
-                    <ul>
-                        <li><strong>Assessment 1:</strong> Written business report analyzing sales data (demonstrates behaviors #1, #2, #3)</li>
-                        <li><strong>Assessment 2:</strong> 10-minute presentation to simulated managers (demonstrates behaviors #1, #4, #5)</li>
-                        <li><strong>Threshold:</strong> Demonstrates 4 of 6 Foundation behaviors with acceptable quality</li>
+                        <li><strong>Data Storytelling:</strong> Business Analysis Report & Presentation → B+ threshold</li>
+                        <li><strong>AI-Augmented Analytics:</strong> AI Tool Application Project → B+ threshold</li>
+                        <li><strong>Analytical Reasoning:</strong> Data Quality Case Analysis → B+ threshold</li>
+                        <li><strong>Collaborative Analytics:</strong> Team Project with Peer Evaluation → B+ threshold</li>
                     </ul>
                 </div>
 
-                <div class="assessment-level">
-                    <h5>Intermediate Level Assessments</h5>
-                    <p><strong>Characteristics:</strong> Complex, authentic projects requiring independence and strategic application</p>
-                    <p><strong>Assessment Types:</strong></p>
+                <div class="assessment-option">
+                    <h6>Intermediate Badges (typically awarded in ISOM 800 series)</h6>
                     <ul>
-                        <li>Client-facing consulting projects with ambiguous requirements</li>
-                        <li>Cross-functional team projects requiring integration</li>
-                        <li>Multi-dataset analyses with competing priorities</li>
-                        <li>Stakeholder presentations with Q&A</li>
-                    </ul>
-                    <p><strong>Example - Intermediate Badge in AI-Augmented Analytics:</strong></p>
-                    <ul>
-                        <li><strong>Assessment 1:</strong> Design AI-enhanced workflow for business problem, document validation approach (demonstrates behaviors #1, #3, #4, #6)</li>
-                        <li><strong>Assessment 2:</strong> Comparative analysis of AI tools with strategic recommendations (demonstrates behaviors #2, #5, #7)</li>
-                        <li><strong>Threshold:</strong> Demonstrates 5 of 7 Intermediate behaviors with high quality</li>
+                        <li><strong>Data Storytelling:</strong> Client Consulting Presentation (ISOM 801) → A- threshold</li>
+                        <li><strong>AI-Augmented Analytics:</strong> AI Workflow Design Project (ISOM 825) → A- threshold</li>
+                        <li><strong>Analytical Reasoning:</strong> Complex Multi-Dataset Analysis (ISOM 820) → A- threshold</li>
+                        <li><strong>Collaborative Analytics:</strong> Cross-Functional Team Project (any 800-level) → A- threshold</li>
                     </ul>
                 </div>
 
-                <div class="assessment-level">
-                    <h5>Advanced Level Assessments</h5>
-                    <p><strong>Characteristics:</strong> Sophisticated projects demonstrating innovation, leadership, or exceptional mastery</p>
-                    <p><strong>Assessment Types:</strong></p>
+                <div class="assessment-option">
+                    <h6>Advanced Badges (typically awarded in ISOM 835 Capstone)</h6>
                     <ul>
-                        <li>Capstone consulting engagements with real clients</li>
-                        <li>Original research or innovation projects</li>
-                        <li>Teaching/mentoring documentation and peer evaluation</li>
-                        <li>Publication-quality analyses or frameworks</li>
-                    </ul>
-                    <p><strong>Example - Advanced Badge in Analytical Reasoning:</strong></p>
-                    <ul>
-                        <li><strong>Assessment 1:</strong> Capstone project with complex, ambiguous business problem requiring systematic evaluation framework (demonstrates behaviors #1, #2, #3, #5)</li>
-                        <li><strong>Assessment 2:</strong> Critical review of published analysis identifying non-obvious limitations and biases (demonstrates behaviors #2, #4, #6)</li>
-                        <li><strong>Threshold:</strong> Demonstrates 5 of 7 Advanced behaviors with exemplary quality</li>
+                        <li><strong>All Competencies:</strong> Capstone Consulting Project → A threshold</li>
+                        <li>Students demonstrate multiple competencies in capstone; faculty confirm which reach Advanced level</li>
+                        <li>Alternative: Advanced research projects, teaching portfolios, or innovation challenges</li>
                     </ul>
                 </div>
+
+                <h5>Step 2: Faculty Confirmation Process</h5>
+                <p>After grading, faculty complete a simple checklist for students meeting grade threshold:</p>
+                
+                <div class="threshold-level">
+                    <h6>Faculty Confirmation Form (30 seconds per student)</h6>
+                    <p><strong>Student:</strong> [Name]<br>
+                    <strong>Assignment:</strong> [Project Name]<br>
+                    <strong>Grade:</strong> [A-]</p>
+                    
+                    <p><strong>Competency Confirmation:</strong></p>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>☐ Student demonstrated competency behaviors at [Foundation/Intermediate/Advanced] level</li>
+                        <li>☐ Work quality reflects appropriate skill application for this level</li>
+                        <li>☐ Ready for next-level challenges (or: demonstrates mastery if Advanced)</li>
+                    </ul>
+                    
+                    <p><strong>Badge Recommended:</strong> ☐ YES &nbsp;&nbsp; ☐ NO</p>
+                    <p><strong>Faculty Signature:</strong> ___________</p>
+                </div>
+
+                <h5>Step 3: Badge Award & Recognition</h5>
+                <ul>
+                    <li>Course ends, grades finalized</li>
+                    <li>Faculty identifies students meeting grade threshold</li>
+                    <li>Faculty reviews work against competency framework (quick reference guide)</li>
+                    <li>Faculty completes confirmation form (yes/no + signature)</li>
+                    <li>Program coordinator awards digital badges to confirmed students</li>
+                    <li>Students receive badge via email and can add to LinkedIn, portfolios, resumes</li>
+                </ul>
             </div>
 
-            <h4>Threshold Criteria and Assessment</h4>
+            <h4>What Faculty Need to Confirm</h4>
             
             <div class="threshold-criteria">
-                <p><strong>Defining "Meeting Threshold":</strong> Focus on demonstrated behaviors, not grades or points</p>
+                <p><strong>Quick Reference:</strong> When confirming competency, faculty ask themselves simple questions based on the level:</p>
                 
                 <div class="threshold-level">
-                    <h5>Foundation Badge Threshold</h5>
+                    <h5>Foundation Badge Confirmation</h5>
+                    <p><em>Did the student...</em></p>
                     <ul>
-                        <li>☑ Demonstrates at minimum 4 of 6 Foundation-level behaviors</li>
-                        <li>☑ Completes all required assessments with acceptable quality</li>
-                        <li>☑ Shows understanding of core concepts and can apply with support</li>
-                        <li>☑ Work may need revision but ultimately meets standards</li>
-                        <li>☑ Ready to progress to Intermediate-level challenges</li>
+                        <li>Organize findings clearly with logical structure?</li>
+                        <li>Connect data to business context appropriately?</li>
+                        <li>Communicate findings effectively for their audience?</li>
+                        <li>Demonstrate understanding of core concepts?</li>
+                        <li>Show readiness to tackle more complex challenges?</li>
                     </ul>
+                    <p><strong>If 4+ behaviors evident and work meets quality standards → Confirm YES</strong></p>
                 </div>
 
                 <div class="threshold-level">
-                    <h5>Intermediate Badge Threshold</h5>
+                    <h5>Intermediate Badge Confirmation</h5>
+                    <p><em>Did the student...</em></p>
                     <ul>
-                        <li>☑ Demonstrates at minimum 5 of 7 Intermediate-level behaviors</li>
-                        <li>☑ Works independently with strategic application across contexts</li>
-                        <li>☑ High-quality work requiring minimal revision</li>
-                        <li>☑ Shows emerging advanced capabilities in some areas</li>
-                        <li>☑ Could serve as peer mentor for Foundation-level students</li>
+                        <li>Work independently with strategic application?</li>
+                        <li>Demonstrate sophisticated skill use (e.g., audience adaptation, complex visualization, systematic evaluation)?</li>
+                        <li>Produce high-quality work with minimal revision needed?</li>
+                        <li>Show emerging advanced capabilities in some areas?</li>
+                        <li>Could they mentor Foundation-level students in this competency?</li>
                     </ul>
+                    <p><strong>If 5+ behaviors evident and work shows strategic mastery → Confirm YES</strong></p>
                 </div>
 
                 <div class="threshold-level">
-                    <h5>Advanced Badge Threshold</h5>
+                    <h5>Advanced Badge Confirmation</h5>
+                    <p><em>Did the student...</em></p>
                     <ul>
-                        <li>☑ Demonstrates at minimum 5 of 7 Advanced-level behaviors</li>
-                        <li>☑ Innovation, leadership, or exceptional quality evident</li>
-                        <li>☑ Work could serve as exemplar for other students</li>
-                        <li>☑ Sustained mastery demonstrated across multiple complex contexts</li>
-                        <li>☑ Ready for professional practice at high level</li>
+                        <li>Demonstrate innovation, leadership, or exceptional quality?</li>
+                        <li>Show mastery across complex, ambiguous contexts?</li>
+                        <li>Produce work that could serve as exemplar for others?</li>
+                        <li>Exhibit professional-level capability in this competency?</li>
+                        <li>Exceed Intermediate expectations with sustained excellence?</li>
                     </ul>
+                    <p><strong>If 5+ behaviors evident and work demonstrates mastery → Confirm YES</strong></p>
                 </div>
 
                 <div class="assessment-note">
-                    <strong>Important:</strong> Thresholds should be calibrated through faculty norming sessions and refined based on actual student performance data. What constitutes "acceptable quality" or "high quality" should be defined with examples and rubrics.
+                    <strong>Important:</strong> The full competency framework provides detailed behavioral indicators for each level. Faculty should reference these when confirming badges, but the confirmation itself is a simple yes/no judgment based on the assignment's demonstrated competencies.
                 </div>
             </div>
 
-            <h4>Implementation Considerations</h4>
+            <h4>Addressing Common Implementation Questions</h4>
             
             <div class="badge-implementation">
-                <h5>Pathway Design: Progressive vs. Flexible</h5>
-                <p><strong>Option A - Progressive (Recommended):</strong> Students must earn Foundation badge before pursuing Intermediate, and Intermediate before Advanced. Ensures developmental progression and prevents students from attempting advanced work before they're ready.</p>
-                <p><strong>Option B - Flexible:</strong> Students can pursue any level based on self-assessment or prior experience. Include "test out" options for students with extensive professional experience.</p>
-                <p><strong>Recommendation:</strong> Progressive for traditional students, with challenge assessments for experienced students to skip levels with evidence.</p>
+                <h5>What if a student earns the grade but doesn't demonstrate competency?</h5>
+                <p>This is rare but can happen (e.g., student earned points through participation/attendance rather than quality work, or gamed the rubric). Faculty simply mark "NO" on confirmation form and provide feedback. Student does not receive badge, even with sufficient grade. This maintains badge credibility.</p>
 
-                <h5>Assessment Menu Approach</h5>
-                <p>Provide students with <strong>multiple pathways</strong> to demonstrate competency:</p>
+                <h5>What if a student demonstrates competency but falls just short of grade threshold?</h5>
+                <p>Faculty have discretion to recommend badge if student is very close (e.g., B instead of B+) and clearly demonstrated competency. Alternatively, student can revise work to meet grade threshold if course allows.</p>
+
+                <h5>Can students retry for badges?</h5>
+                <p><strong>Recommended: YES</strong> - If student doesn't receive badge, they can either:</p>
                 <ul>
-                    <li>Define 3-4 different assessment options per badge</li>
-                    <li>Students complete 2-3 assessments (their choice) meeting threshold</li>
-                    <li>Honors different learning styles and interests</li>
-                    <li>Reduces "teaching to the test" concerns</li>
+                    <li>Revise the assignment to meet both criteria (if course allows)</li>
+                    <li>Earn the badge in a future course through a different assignment</li>
+                    <li>Complete a portfolio assessment for that competency</li>
+                </ul>
+                <p>Badges represent mastery, not speed. Multiple attempts support growth mindset.</p>
+
+                <h5>Do badges replace grades?</h5>
+                <p><strong>NO</strong> - Badges complement traditional grades. Students receive letter grades as usual; badges provide additional credential certifying specific competencies. Think of badges as "verified skills" in addition to academic performance.</p>
+
+                <h5>How much extra work is this for faculty?</h5>
+                <p><strong>Minimal:</strong></p>
+                <ul>
+                    <li>One-time: 1-hour training on framework and confirmation process</li>
+                    <li>Per semester: 30 seconds per student for confirmation (e.g., 20 students = 10 minutes)</li>
+                    <li>No separate assignments needed—uses existing coursework</li>
+                    <li>Quick reference guides provided for each competency</li>
                 </ul>
 
-                <h5>Revision and Mastery Learning</h5>
-                <p><strong>Critical Question:</strong> Can students revise work that doesn't initially meet threshold?</p>
-                <p><strong>Recommendation: YES</strong> - Badges represent mastery, not speed. Allow revisions within reasonable timeframes. Students who don't meet threshold receive specific feedback on which behaviors need strengthening and can resubmit after additional learning/practice.</p>
-
-                <h5>Course Integration</h5>
-                <p><strong>Option A - Designated Badge Courses:</strong> Specific courses are designated as badge-awarding. Clear expectations, easy to track.</p>
-                <p><strong>Option B - Portfolio-Based:</strong> Students collect evidence across multiple courses, submit for review at milestones.</p>
-                <p><strong>Recommendation:</strong> Hybrid approach - most students earn badges through designated courses, but portfolio option available for advanced students or those with prior experience.</p>
-
-                <h5>Recognition and Credentialing</h5>
+                <h5>What technology is needed?</h5>
                 <ul>
-                    <li>Digital badges compatible with platforms like Credly or Badgr</li>
-                    <li>Notation on transcripts and official program records</li>
-                    <li>Badge portfolio for job applications with work samples</li>
-                    <li>LinkedIn integration for professional visibility</li>
-                    <li>Graduation ceremony recognition for comprehensive badges</li>
-                </ul>
-            </div>
-
-            <h4>Sample Badge Pathway: Data Storytelling Intermediate Badge</h4>
-            
-            <div class="badge-example-detailed">
-                <h5>Prerequisites</h5>
-                <p>Foundation Badge in Data Storytelling (or challenge assessment waiver)</p>
-
-                <h5>Required Competency Behaviors (demonstrate 5 of 7):</h5>
-                <ol>
-                    <li>Develop complete story arcs that balance technical rigor with accessibility</li>
-                    <li>Design visualizations that reveal patterns and support decision-making</li>
-                    <li>Craft actionable recommendations tied to specific business outcomes</li>
-                    <li>Adapt communication style, depth, and framing to stakeholder expertise</li>
-                    <li>Anticipate and address potential questions or concerns in the narrative</li>
-                    <li>Synthesize multiple data sources into a unified, coherent story</li>
-                    <li>Use persuasive techniques while maintaining analytical integrity</li>
-                </ol>
-
-                <h5>Assessment Options (Complete 2 of 4):</h5>
-                
-                <div class="assessment-option">
-                    <h6>Option 1: Executive Briefing Project</h6>
-                    <ul>
-                        <li><strong>Task:</strong> Analyze complex dataset, present findings to simulated executives</li>
-                        <li><strong>Duration:</strong> 4 weeks</li>
-                        <li><strong>Deliverables:</strong> Written report + 15-minute presentation + Q&A</li>
-                        <li><strong>Behaviors Assessed:</strong> #1, #2, #3, #4, #5</li>
-                    </ul>
-                </div>
-
-                <div class="assessment-option">
-                    <h6>Option 2: Multi-Stakeholder Communication Portfolio</h6>
-                    <ul>
-                        <li><strong>Task:</strong> Take same analysis, create 3 different communication artifacts for different audiences (technical team, executives, general public)</li>
-                        <li><strong>Duration:</strong> 3 weeks</li>
-                        <li><strong>Deliverables:</strong> 3 tailored presentations/reports + reflection on adaptation choices</li>
-                        <li><strong>Behaviors Assessed:</strong> #1, #4, #6, #7</li>
-                    </ul>
-                </div>
-
-                <div class="assessment-option">
-                    <h6>Option 3: Client Consulting Engagement</h6>
-                    <ul>
-                        <li><strong>Task:</strong> Real or simulated client project with ambiguous requirements</li>
-                        <li><strong>Duration:</strong> 6 weeks (team project)</li>
-                        <li><strong>Deliverables:</strong> Client presentation + documentation + peer evaluation</li>
-                        <li><strong>Behaviors Assessed:</strong> #1, #2, #3, #4, #5, #6</li>
-                    </ul>
-                </div>
-
-                <div class="assessment-option">
-                    <h6>Option 4: Visualization Innovation Challenge</h6>
-                    <ul>
-                        <li><strong>Task:</strong> Create portfolio of 5 sophisticated visualizations for complex datasets with design rationale</li>
-                        <li><strong>Duration:</strong> Ongoing across semester</li>
-                        <li><strong>Deliverables:</strong> Visualization portfolio + design documentation + presentation</li>
-                        <li><strong>Behaviors Assessed:</strong> #2, #5, #7</li>
-                    </ul>
-                </div>
-
-                <h5>Assessment and Awarding</h5>
-                <ul>
-                    <li>Student chooses 2 assessment options</li>
-                    <li>Must demonstrate 5 of 7 behaviors across both assessments</li>
-                    <li>Faculty assess using competency rubric aligned to behaviors</li>
-                    <li>If threshold not met, specific feedback provided on missing behaviors</li>
-                    <li>Student can revise within 2 weeks or complete alternative assessment</li>
-                    <li>Badge awarded when threshold achieved</li>
+                    <li>Digital badge platform (Credly, Badgr, or Canvas Badges) - $500-2000/year</li>
+                    <li>Simple confirmation form (Google Form or embedded in LMS)</li>
+                    <li>Grade data automatically from existing LMS</li>
+                    <li>Program coordinator manages badge issuance (2-3 hours per semester)</li>
                 </ul>
             </div>
 
-            <h4>Benefits for Stakeholders</h4>
+            <h4>Benefits of This Simplified Approach</h4>
             
             <div class="badge-benefits">
                 <div class="benefit-group">
                     <h5>For Students:</h5>
                     <ul>
-                        <li>Clear targets and transparent expectations</li>
-                        <li>Portable credentials that communicate specific capabilities</li>
-                        <li>Multiple pathways honoring different strengths</li>
-                        <li>Pride in authentic, meaningful achievements</li>
-                        <li>Career differentiation and professional credibility</li>
+                        <li>Clear, transparent expectations</li>
+                        <li>Portable credentials for resumes and LinkedIn</li>
+                        <li>Recognition of specific capabilities beyond GPA</li>
+                        <li>Pride in verified competencies</li>
+                        <li>No additional assignments required</li>
                     </ul>
                 </div>
 
                 <div class="benefit-group">
                     <h5>For Faculty:</h5>
                     <ul>
-                        <li>Aligned with evidence-based teaching practices</li>
-                        <li>Clear assessment criteria reduce subjectivity</li>
-                        <li>Flexibility in designing authentic assessments</li>
-                        <li>Visible evidence of student learning and progression</li>
-                        <li>Supports mastery learning and growth mindset</li>
+                        <li>Minimal additional workload (30 sec/student)</li>
+                        <li>Fits into existing grading workflow</li>
+                        <li>No new assignment creation needed</li>
+                        <li>Simple yes/no confirmation</li>
+                        <li>Maintains academic judgment and standards</li>
                     </ul>
                 </div>
 
                 <div class="benefit-group">
-                    <h5>For Program/Institution:</h5>
+                    <h5>For Program/Administration:</h5>
                     <ul>
-                        <li>Concrete evidence for accreditation reviews</li>
-                        <li>Marketing differentiator in competitive landscape</li>
-                        <li>Demonstrates innovation in curriculum design</li>
-                        <li>Trackable outcomes and assessment data</li>
-                        <li>Alumni network with verified competencies</li>
+                        <li>Easy to explain to stakeholders</li>
+                        <li>Low implementation cost and complexity</li>
+                        <li>Credible evidence for accreditation</li>
+                        <li>Marketing differentiator</li>
+                        <li>Can start small and scale</li>
                     </ul>
                 </div>
 
                 <div class="benefit-group">
                     <h5>For Employers:</h5>
                     <ul>
-                        <li>Clear signal of specific capabilities beyond GPA</li>
-                        <li>Portfolio evidence of actual work quality</li>
-                        <li>Reduced hiring risk through verified competencies</li>
-                        <li>Understanding of candidate's development areas</li>
+                        <li>Clear signal of specific skills</li>
+                        <li>Verified competencies, not just course completion</li>
+                        <li>Easy to understand badge system</li>
+                        <li>Confidence in hiring</li>
                     </ul>
                 </div>
             </div>
 
             <div class="badge-closing">
-                <h5>Getting Started with Badge Implementation</h5>
-                <p><strong>Phase 1 (Semester 1):</strong> Design badge requirements and threshold rubrics for one competency. Pilot with willing faculty in 1-2 courses.</p>
-                <p><strong>Phase 2 (Semester 2-3):</strong> Refine based on pilot data. Expand to additional competencies. Build exemplar library.</p>
-                <p><strong>Phase 3 (Year 2):</strong> Full program implementation. Integrate with student information systems. Market to prospective students.</p>
-                <p><strong>Phase 4 (Ongoing):</strong> Collect validity evidence. Track badge earners' outcomes. Refine thresholds annually. Share results with accreditors.</p>
+                <h5>Getting Started: Implementation Timeline</h5>
+                <p><strong>Phase 1 - Semester 1 (Pilot):</strong></p>
+                <ul>
+                    <li>Map 2-3 badges to existing assignments in pilot courses</li>
+                    <li>Train pilot faculty (1 hour)</li>
+                    <li>Implement confirmation process</li>
+                    <li>Collect feedback from faculty and students</li>
+                    <li>Refine forms and procedures</li>
+                </ul>
                 
-                <p class="badge-note"><strong>Remember:</strong> Badge systems should enhance learning, not become the sole focus. Maintain the developmental approach of the competency framework—badges recognize achievement at milestones, but the real goal is continuous growth.</p>
+                <p><strong>Phase 2 - Semester 2-3 (Expansion):</strong></p>
+                <ul>
+                    <li>Expand to all Foundation and Intermediate badges</li>
+                    <li>Train all faculty</li>
+                    <li>Integrate with digital badge platform</li>
+                    <li>Build quick reference guides for each competency</li>
+                    <li>Market badges to current and prospective students</li>
+                </ul>
+                
+                <p><strong>Phase 3 - Year 2 (Full Implementation):</strong></p>
+                <ul>
+                    <li>All badges operational across program</li>
+                    <li>Collect outcome data (badge earners vs. career success)</li>
+                    <li>Refine thresholds based on evidence</li>
+                    <li>Report to accreditors</li>
+                    <li>Consider adding Advanced badges or Scholar recognition</li>
+                </ul>
+                
+                <p><strong>Phase 4 - Ongoing (Continuous Improvement):</strong></p>
+                <ul>
+                    <li>Annual faculty calibration sessions</li>
+                    <li>Student feedback collection</li>
+                    <li>Employer feedback on badge value</li>
+                    <li>Refinement of assignments and thresholds</li>
+                    <li>Build exemplar library from badge-earning work</li>
+                </ul>
+                
+                <div class="badge-note">
+                    <p><strong>Key Success Factors:</strong></p>
+                    <ul>
+                        <li>Start with willing faculty volunteers</li>
+                        <li>Keep it simple initially—complexity can be added later</li>
+                        <li>Provide quick reference guides and examples</li>
+                        <li>Celebrate badge earners publicly (with permission)</li>
+                        <li>Collect data and refine based on actual implementation experience</li>
+                        <li>Maintain the developmental philosophy—badges are milestones, not the goal</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
