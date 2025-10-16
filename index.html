@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSBA Competency Rubrics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .competency-section {
+            margin-bottom: 50px;
+        }
+
+        .level-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .level-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .level-card.beginning {
+            border-left-color: #e74c3c;
+        }
+
+        .level-card.developing {
+            border-left-color: #f39c12;
+        }
+
+        .level-card.proficient {
+            border-left-color: #2ecc71;
+        }
+
+        .level-card.advanced {
+            border-left-color: #9b59b6;
+        }
+
+        .level-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .level-card.beginning .level-title {
+            color: #e74c3c;
+        }
+
+        .level-card.developing .level-title {
+            color: #f39c12;
+        }
+
+        .level-card.proficient .level-title {
+            color: #2ecc71;
+        }
+
+        .level-card.advanced .level-title {
+            color: #9b59b6;
+        }
+
+        .criteria {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05em;
+        }
+
+        .behaviors {
+            margin-top: 15px;
+        }
+
+        .behaviors h4 {
+            font-size: 1em;
+            color: #34495e;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .behaviors ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .behaviors li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            color: #555;
+        }
+
+        .behaviors li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .implementation {
+            background-color: #ecf0f1;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        .implementation h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        .implementation ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .implementation li {
+            margin-bottom: 8px;
+        }
+
+        .progression-box {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border: 1px solid #bdc3c7;
+        }
+
+        .progression-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .progression-box li {
+            padding: 5px 0;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .level-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MSBA COMPETENCY RUBRICS</h1>
+
+        <!-- Competency 1 -->
+        <div class="competency-section">
+            <h2>COMPETENCY 1: STORYTELLING</h2>
+            <p style="margin-bottom: 20px; font-style: italic; color: #555;">Ability to communicate data insights effectively to diverse audiences</p>
+
+            <div class="level-card beginning">
+                <div class="level-title">Beginning</div>
+                <div class="criteria">Presents basic findings with limited context or narrative structure. Relies heavily on technical jargon without translation for a business audience.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Lists data points without connecting them to business implications</li>
+                        <li>Minimal use of visualization to support narrative</li>
+                        <li>Unclear or missing recommendations</li>
+                        <li>Does not adapt communication to the audience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card developing">
+                <div class="level-title">Developing</div>
+                <div class="criteria">Organizes findings into a logical structure with some business context. Beginning to frame insights for specific audiences, but inconsistently.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Creates basic narrative arc (problem–analysis–finding)</li>
+                        <li>Uses visualizations that support some key points</li>
+                        <li>Provides recommendations with limited justification</li>
+                        <li>Shows awareness of the audience, but communication still primarily technical</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card proficient">
+                <div class="level-title">Proficient</div>
+                <div class="criteria">Crafts clear, compelling narratives that connect data insights to business outcomes. Consistently adapts communication style to audience needs.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Develops a complete story with context, analysis, and actionable insights</li>
+                        <li>Selects and designs visualizations that enhance understanding</li>
+                        <li>Provides well-justified, actionable recommendations</li>
+                        <li>Effectively translates technical findings for non-technical stakeholders</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card advanced">
+                <div class="level-title">Advanced</div>
+                <div class="criteria">Delivers sophisticated, persuasive narratives that drive decision-making. Seamlessly integrates data, visualization, and business strategy across complex scenarios.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Crafts strategic narratives that anticipate questions and objections</li>
+                        <li>Creates innovative visualizations that reveal non-obvious insights</li>
+                        <li>Presents multi-layered recommendations with implementation roadmaps</li>
+                        <li>Influences stakeholder decisions through compelling data storytelling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competency 2 -->
+        <div class="competency-section">
+            <h2>COMPETENCY 2: AI INTEGRATION</h2>
+            <p style="margin-bottom: 20px; font-style: italic; color: #555;">Understanding and leveraging AI tools appropriately in analytics workflows</p>
+
+            <div class="level-card beginning">
+                <div class="level-title">Beginning</div>
+                <div class="criteria">Basic awareness of AI tools with limited ability to use them effectively. Accepts AI outputs without verification or critical assessment.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Uses simple, generic prompts with inconsistent results</li>
+                        <li>Cannot explain AI tool selection rationale</li>
+                        <li>Does not validate AI-generated outputs</li>
+                        <li>Limited understanding of AI capabilities and limitations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card developing">
+                <div class="level-title">Developing</div>
+                <div class="criteria">Can use AI tools for standard tasks with guidance. Beginning to evaluate outputs and understand when AI is appropriate to use.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Creates more specific prompts that yield relevant outputs</li>
+                        <li>Compares AI results with traditional methods</li>
+                        <li>Identifies obvious errors or inconsistencies in AI outputs</li>
+                        <li>Shows growing understanding of appropriate AI use cases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card proficient">
+                <div class="level-title">Proficient</div>
+                <div class="criteria">Strategically selects and effectively prompts AI tools for various analytics tasks. Critically evaluates outputs and understands tool limitations.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Designs sophisticated prompts that produce high-quality outputs</li>
+                        <li>Systematically compares AI and traditional approaches</li>
+                        <li>Validates and refines AI outputs using domain knowledge</li>
+                        <li>Articulates when AI adds value vs. when traditional methods are preferable</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card advanced">
+                <div class="level-title">Advanced</div>
+                <div class="criteria">Demonstrates advanced AI literacy across multiple tools and contexts. Integrates AI strategically into comprehensive analytics solutions.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Engineers complex prompt sequences for multi-step problems</li>
+                        <li>Selects optimal AI tools based on task requirements and constraints</li>
+                        <li>Develops frameworks for AI validation and quality assurance</li>
+                        <li>Innovates new applications of AI in analytics workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competency 3 -->
+        <div class="competency-section">
+            <h2>COMPETENCY 3: CRITICAL THINKING</h2>
+            <p style="margin-bottom: 20px; font-style: italic; color: #555;">Analytical evaluation of data, processes, and business problems</p>
+
+            <div class="level-card beginning">
+                <div class="level-title">Beginning</div>
+                <div class="criteria">Accepts data and findings at face value with minimal questioning. Analysis is descriptive rather than evaluative.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Reports what data shows without questioning quality or completeness</li>
+                        <li>Does not identify assumptions or limitations</li>
+                        <li>Misses gaps in data or logic</li>
+                        <li>Concludes without considering alternative explanations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card developing">
+                <div class="level-title">Developing</div>
+                <div class="criteria">Beginning to question data quality and analytical approaches. Identifies some limitations, but the evaluation is inconsistent.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Asks basic questions about data sources and collection methods</li>
+                        <li>Identifies obvious data quality issues or limitations</li>
+                        <li>Considers alternative interpretations when prompted</li>
+                        <li>Shows emerging awareness of analytical assumptions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card proficient">
+                <div class="level-title">Proficient</div>
+                <div class="criteria">Systematically evaluates data quality, analytical methods, and conclusions. Identifies assumptions, gaps, and alternative perspectives.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Critically assesses data sources, completeness, and reliability</li>
+                        <li>Maps data processes and identifies where information is missing</li>
+                        <li>Evaluates analytical approaches for appropriateness and rigor</li>
+                        <li>Considers multiple explanations and acknowledges uncertainty</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card advanced">
+                <div class="level-title">Advanced</div>
+                <div class="criteria">Demonstrates sophisticated analytical reasoning across complex, ambiguous situations. Develops frameworks for critical evaluation.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Creates systematic evaluation frameworks for data and processes</li>
+                        <li>Identifies non-obvious gaps, biases, and confounding factors</li>
+                        <li>Synthesizes insights from multiple analytical perspectives</li>
+                        <li>Proactively questions assumptions and challenges conventional thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competency 4 -->
+        <div class="competency-section">
+            <h2>COMPETENCY 4: TEAMWORK</h2>
+            <p style="margin-bottom: 20px; font-style: italic; color: #555;">Effective collaboration in cross-functional analytics projects</p>
+
+            <div class="level-card beginning">
+                <div class="level-title">Beginning</div>
+                <div class="criteria">Participates minimally in team activities. Works primarily in isolation without considering team goals or member contributions.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Completes only individually assigned tasks</li>
+                        <li>Limited communication with team members</li>
+                        <li>Does not actively contribute to team discussions or decisions</li>
+                        <li>Misses deadlines affecting team progress</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card developing">
+                <div class="level-title">Developing</div>
+                <div class="criteria">Contributes to team tasks and participates in discussions. Beginning to coordinate with others but collaboration is inconsistent.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Completes assigned tasks and communicates progress</li>
+                        <li>Participates in team meetings and shares ideas</li>
+                        <li>Responds to team member requests and questions</li>
+                        <li>Shows willingness to help but requires direction</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card proficient">
+                <div class="level-title">Proficient</div>
+                <div class="criteria">Actively collaborates with team members, leveraging diverse perspectives. Reliably contributes to team success and helps integrate work products.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Proactively shares knowledge and supports team members</li>
+                        <li>Facilitates productive team discussions and decision-making</li>
+                        <li>Integrates individual contributions into cohesive deliverables</li>
+                        <li>Adapts to different team roles as needed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="level-card advanced">
+                <div class="level-title">Advanced</div>
+                <div class="criteria">Demonstrates leadership in team dynamics and project coordination. Optimizes team performance and navigates complex interpersonal and project challenges.</div>
+                <div class="behaviors">
+                    <h4>Observable Behaviors:</h4>
+                    <ul>
+                        <li>Identifies and leverages team members' unique strengths</li>
+                        <li>Facilitates resolution of conflicts or obstacles</li>
+                        <li>Coordinates complex, multi-faceted team projects</li>
+                        <li>Builds team culture that encourages innovation and accountability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Implementation Guidance -->
+        <div class="implementation">
+            <h2 style="margin-top: 0; border: none; padding: 0;">IMPLEMENTATION GUIDANCE</h2>
+            
+            <h3>Using These Rubrics</h3>
+            
+            <h4 style="margin-top: 15px; color: #2c3e50;">For Faculty:</h4>
+            <ul>
+                <li>Map specific assignments to competency levels based on where students should be in program progression</li>
+                <li>Use rubrics to design assignments that scaffold skill development</li>
+                <li>Provide a rubric in advance so students understand expectations</li>
+                <li>Use consistent language from the rubrics in feedback</li>
+            </ul>
+
+            <h4 style="margin-top: 15px; color: #2c3e50;">For Assessment:</h4>
+            <ul>
+                <li>Not every assignment needs to assess all observable behaviors—select the most relevant criteria</li>
+                <li>Students should demonstrate proficiency by the capstone, but progression varies by course sequence</li>
+                <li>Consider using rubrics for both formative feedback and summative grading</li>
+                <li>Track competency development across multiple assignments within a course</li>
+            </ul>
+
+            <h3>Progression Expectations</h3>
+            <div class="progression-box">
+                <ul>
+                    <li><strong>ISOM 700–631 (Early):</strong> Beginning → Developing</li>
+                    <li><strong>ISOM 801–825 (Middle):</strong> Developing → Proficient</li>
+                    <li><strong>ISOM 827–835–837 (Advanced):</strong> Proficient → Advanced</li>
+                </ul>
+            </div>
+
+            <h3>Mapping to Assignments</h3>
+            <p>When identifying assignments for the October 16 meeting, we can consider:</p>
+            <ul>
+                <li>Which competency level should students demonstrate in this course?</li>
+                <li>Which observable behaviors can this assignment assess?</li>
+                <li>How does this assignment scaffold to the next course's expectations?</li>
+                <li>What feedback mechanisms will support competency development?</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Last Updated: October 14, 2025
+        </div>
+    </div>
+</body>
+</html>
